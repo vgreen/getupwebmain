@@ -175,7 +175,28 @@ mark.onclick = _ => {
 		}
 	}
 
+document.getElementById('submit').onclick = _ =>{
+    let re = /^\d[\d\(\)\ -]{4,18}\d$/;
+    let myPhone = document.getElementById('phone').value
+    let output = re.test(myPhone) ? 'Номер телефона введен правильно!' : 'Номер телефона введен неправильно!'
+  	console.log(output)
+}  
+
+window.onresize = _ =>{
+	if(window.innerWidth <= 1024) 
+		{
+			close.innerHTML = '<img src="assets/close-button.svg">'
+		}
+		else
+		{
+			close.innerHTML = '<img src="assets/close-button-white.png">'
+		}
+	
+}
+
 window.onload = _ => {
+	if(window.innerWidth <= 1024) close.innerHTML = '<img src="assets/close-button.svg">'
+
 	block.classList.add("active");
 
 	
