@@ -90,9 +90,10 @@ let target // target directory (redirect in form)
 // form close function
 close.onclick = _=>{
 	form.classList.remove('active')
-	form.style.display = 'none'
+
 	wrp.style.filter =  ''
 	false_back.classList.remove('active')
+	setTimeout(_ => {form.style.display = ''},700)
 }
 //form open function
 order.onclick = _ => {
