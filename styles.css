@@ -275,7 +275,8 @@ input {
 
 @media screen and (max-height: 414px) {
 	#content-text{
-		top: 13%;
+		justify-content: flex-start;
+		top: 14%;
 	    left: 12%;
 	    height: 80%;
 	    width: 75%;
@@ -398,6 +399,7 @@ input {
 
 @media screen and (max-width: 768px) {
 	#logo {
+		top:8px;
 		left: 8px;
 	}
 	#socials {
